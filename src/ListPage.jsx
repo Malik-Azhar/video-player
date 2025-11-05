@@ -19,7 +19,7 @@ const ListPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex flex-col items-center px-5 py-10">
       {/* Header */}
-      <div className="flex items-center mb-10 w-full max-w-5xl justify-between">
+      <div className="flex items-center max-sm:flex-wrap max-sm:gap-4 mb-10 w-full max-w-5xl justify-between">
         <div className="flex items-center gap-3">
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -33,7 +33,7 @@ const ListPage = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-3xl max-sm:text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
           >
             🎬 Select an Episode
           </motion.h1>
@@ -44,10 +44,10 @@ const ListPage = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center cursor-pointer gap-2 bg-gradient-to-r from-pink-500 via-purple-600 to-blue-600 hover:from-pink-400 hover:via-purple-500 hover:to-blue-500 px-6 py-3 rounded-xl text-white font-semibold shadow-[0_0_20px_rgba(147,51,234,0.5)] transition-all"
+            className="flex items-center cursor-pointer gap-2 bg-gradient-to-r from-pink-500 via-purple-600 to-blue-600 hover:from-pink-400 hover:via-purple-500 hover:to-blue-500 px-6 py-3 rounded-xl text-white font-semibold shadow-[0_0_20px_rgba(147,51,234,0.5)] transition-all max-sm:rounded-md max-sm:py-1"
           >
             <LinkIcon className="w-5 h-5" />
-            Play Custom URL
+            <span className="max-sm:hidden">Play Custom URL</span>
           </motion.button>
         </Link>
       </div>
