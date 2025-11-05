@@ -55,7 +55,7 @@ function AddNewUrl() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-3xl max-sm:text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent" 
           >
             🎬 Add Video Url
           </motion.h1>
@@ -63,8 +63,8 @@ function AddNewUrl() {
 
       </div>
 
-      <div className="relative bg-gray-900/80 backdrop-blur-2xl border border-gray-700/60 rounded-3xl p-10 w-full max-w-xl shadow-[0_0_40px_-10px_rgba(109,40,217,0.5)] text-center">
-        <h1 className="text-4xl font-extrabold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+      <div className="relative bg-gray-900/80 backdrop-blur-2xl border border-gray-700/60 rounded-3xl p-10 w-full max-w-xl shadow-[0_0_40px_-10px_rgba(109,40,217,0.5)] text-center max-sm:max-w-[90%] max-sm:p-4">
+        <h1 className="text-4xl max-sm:text-lg font-extrabold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
           🎬 Enter Your Video URL
         </h1>
 
@@ -85,7 +85,7 @@ function AddNewUrl() {
 
         <button
           onClick={handlePlay}
-          className="mt-8 w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-400 transition-all duration-500 py-3 rounded-xl font-semibold text-white shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:shadow-[0_0_25px_rgba(168,85,247,0.8)] transform hover:-translate-y-[2px]"
+          className="mt-8 w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-400 transition-all duration-500 py-3 rounded-xl font-semibold text-white shadow-[0_0_15px_rgba(168,85,247,0.5)] hover:shadow-[0_0_25px_rgba(168,85,247,0.8)] transform hover:-translate-y-[2px] max-sm:rounded-md max-sm:py-2"
         >
           ▶ Play Video
         </button>
