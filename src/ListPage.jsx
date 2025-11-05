@@ -8,7 +8,8 @@ const ListPage = () => {
   const navigate = useNavigate();
 
   const handlePlay = (url) => {
-    navigate("/player", { state: { videoUrl: url } });
+    localStorage.setItem("videoUrl", url);
+    navigate("/player");
   };
 
   useEffect(() => {
